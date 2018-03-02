@@ -23,6 +23,6 @@ if( is_admin() ) {
 	require_once('init.php');
 }
 //echo phpinfo();
-//require_once('iPayment.php');
-//require_once('iPaymnet_function.php');
+require_once('iPayment.php');
+require_once('iPaymnet_function.php');
 ?>

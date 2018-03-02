@@ -1,15 +1,15 @@
 <?php
 
-	class IPAYMENTPROM{
+	class IPAYMENTPROM {
 
 		
 		const TABLE_MASTER_PAYMENT_LOG = "payment_master_prom_log";
 
 		const PLUGIN_FOLDER_NAME = "ipayment";
 		
-		//const STATUS_0 = 'Wait';
-	    //const STATUS_1 = 'successful';
-		//const STATUS_2 = 'Unsuccessful';
+		const STATUS_0 = 'Wait';
+	    const STATUS_1 = 'successful';
+		const STATUS_2 = 'Unsuccessful';
 
 		
 		const MAIL_SENDER_DEFAULT = "weeraphan@csloxinfo.net";
@@ -26,6 +26,12 @@
 		const CAPTCHA_CAPTION_EMPTY = "Please check the the captcha form.";
 		const CAPTCHA_CAPTION_WRONG = "You are spammer!!! ";
 
+		const KEY_REFID = "refid";
+		const KEY_NAME = "cname";
+		const KEY_EMAIL = "cemail";
+		const KEY_PHONE = "cphone";
+		const KEY_NOTIES = "cnoties";
+		const KEY_AMOUNT = "camount";
 		}
 
 ?>

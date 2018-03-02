@@ -11,6 +11,7 @@ function IPAYMENTPROM_options_install() {
 			  i_amount varchar(50) NOT NULL,
 			  i_name varchar(50) NOT NULL,
 			  i_email  varchar(50) NOT NULL,
+			  i_noties  text NOT NULL,
 			  i_sysdate timestamp NULL ,
 			  r_sysdate timestamp NULL ,  			  
 			  i_status varchar(10) NOT NULL,
