@@ -1,9 +1,9 @@
 <?php
 
 function ipayment_shortcode($atts = [], $content = null, $tag = '')
-{
-
-		if(isset($_POST['submitpayment'])) {
+{	 
+	
+		if($_POST['submitpayment']!=null)   {
 
 	
 				if (get_option( '_iPAYMENT_CAPTCHA_FLAG' ,'true')) {
@@ -23,14 +23,8 @@ function ipayment_shortcode($atts = [], $content = null, $tag = '')
 				}
 
 			$myPostArgs = filter_input_array(INPUT_POST);
-
-			//Insertto log			
-			if (Stamp_log_payment($myPostArgs)) {				
-				// $Log_return = API_POST_PAYMENT($_POST[IPAYMENT::KEY_REFID],$_POST["omiseToken"],$_POST[IPAYMENT::KEY_AMOUNT],IPAYMENT::CURRENT_PAYMENT); // (token,amount,current)
-			} 
-			
-			if ($Log_return==IPAYMENT::STATUS_1) {
-				$includeHTML = file_get_contents(plugins_url('/template/_tmp_thank.html',PLUGIN_FILE_URL ));				
+			if (Stamp_log_payment($myPostArgs)=="1") { // Success
+				$includeHTML = fn_display_qrcode();
 			} else {
 				$includeHTML = file_get_contents(plugins_url('/template/_tmp_error.html',PLUGIN_FILE_URL ));
 			}

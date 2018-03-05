@@ -11,6 +11,7 @@ function IPAYMENTPROM_options_install() {
 			  i_amount varchar(50) NOT NULL,
 			  i_name varchar(50) NOT NULL,
 			  i_email  varchar(50) NOT NULL,
+			  i_phone  varchar(50) NOT NULL,
 			  i_noties  text NOT NULL,
 			  i_sysdate timestamp NULL ,
 			  r_sysdate timestamp NULL ,  			  
@@ -63,7 +64,7 @@ add_action('admin_menu','display_iPaymnetPrommenu');
 
 define('iPAYROOTDIR', plugin_dir_path(PLUGIN_FILE_URL));
 
-//require_once(iPAYROOTDIR . 'order-list.php');
+require_once(iPAYROOTDIR . 'order-list.php');
 require_once(iPAYROOTDIR . 'config.php');
 
 

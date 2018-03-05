@@ -10,3 +10,8 @@
 .wp-list-table-list tr:hover th, .wp-list-table-list tr:hover td {
     background-color: #D1D119;
 }
+
+div #moreDetail {    
+    overflow:hidden;
+    text-overflow: ellipsis;
+}

@@ -7,14 +7,14 @@
 
 		const PLUGIN_FOLDER_NAME = "ipayment";
 		
-		const STATUS_0 = 'Wait';
+		/*const STATUS_0 = 'Wait';
 	    const STATUS_1 = 'successful';
-		const STATUS_2 = 'Unsuccessful';
-
+		const STATUS_2 = 'Unsuccessful';*/
+		const MYSTATUS = array("WAIT","SUCCESSFUL");
 		
 		const MAIL_SENDER_DEFAULT = "weeraphan@csloxinfo.net";
 
-		const LIST_ORDER_PER_PAGE = 10; /// กำหนดจำนวน order 
+		const LIST_ORDER_PER_PAGE = 20; /// กำหนดจำนวน order 
 		
 
 		///// CAPTCHA CONFIG
@@ -24,7 +24,7 @@
 		//const CAPTCHASECRETKEY = "6Lf47ykTAAAAAI17dcc2qR8PD9RsCM3liYQ_HC8N";
 		
 		const CAPTCHA_CAPTION_EMPTY = "Please check the the captcha form.";
-		const CAPTCHA_CAPTION_WRONG = "You are spammer!!! ";
+		const CAPTCHA_CAPTION_WRONG = "Do not repload please fill information again </br><a href='./'>Back</a>";
 
 		const KEY_REFID = "refid";
 		const KEY_NAME = "cname";
